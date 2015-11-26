@@ -1,2 +1,2 @@
 # exercise1
-daily exercise programs
+daily exercise programs done in ChargeBee
