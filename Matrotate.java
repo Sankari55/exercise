@@ -1,34 +1,35 @@
 import java.io.*;
 import java.util.*;
 
-class Matrotate{
+class Matrotate  {
 	public static void main(String args[])
 	{
-	 int i,j,n=4;
-	 int[][] aa = {{1,2,3},{4,5,6},{7,8,9}};
 	 Scanner in = new Scanner(System.in);
-	 for(i=0;i<n;i++)
+	 System.out.println("Enter size of matrix:");
+	 int n=in.nextInt();
+	 int[][] aa=new int[n][n];
+	 for(int i=0;i<n;i++)
 	 {   
-	 	for(j=0;j<n;j++) System.out.print(aa[j][i]);
-	    System.out.println("");
+	 	for(int j=0;j<n;j++) {
+	 		aa[i][j]=in.nextInt();
+	 	}
 	 }
 	 System.out.println("Right/Left?(l/r):");
-	 String ch = in.nextLine();
+	 String ch = in.next();
      System.out.println("Choice is:"+ch);
-     if(ch.equals("r"))
-       for(i=0;i<n;i++)
+     if(ch.equals("r")){
+       for(int i=0;i<n;i++)
 	   {
-	 	for(j=n-1;j>=0;j--) System.out.print(aa[j][i]);
+	 	for(int j=n-1;j>=0;j--) System.out.print(aa[j][i]);
 	 	System.out.println("");
 	   }
-	 else
-	   for(i=n-1;i>=0;i--)
+	  }
+	 else{
+	   for(int i=n-1;i>=0;i--)
 	   {
-	 	for(j=0;j<n;j++)
+	 	for(int j=0;j<n;j++)
 	 		System.out.print(aa[j][i]);
 	 	System.out.println("");
-	   }
-	
-
+	   }}
 	}
 }
