@@ -1,0 +1,1 @@
+this is a document it is used to test the program that counts the number of words in this document and also counts the repeatition of words if any 
